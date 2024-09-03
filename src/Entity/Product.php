@@ -32,6 +32,9 @@ class Product
     #[ORM\Column]
     private ?float $price = null;
 
+    #[ORM\Column(type: 'boolean')]  
+    private ?bool $isBest = null;
+
     #[ORM\ManyToOne(inversedBy: 'products')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Category $category = null;
@@ -109,6 +112,18 @@ class Product
     public function setPrice(float $price): static
     {
         $this->price = $price;
+
+        return $this;
+    }
+
+    public function getIsBest(): ?bool  // Ajout du getter pour isBest
+    {
+        return $this->isBest;
+    }
+
+    public function setIsBest(bool $isBest): static  // Ajout du setter pour isBest
+    {
+        $this->isBest = $isBest;
 
         return $this;
     }
