@@ -1,5 +1,6 @@
 body{
     position: relative;
+    margin-bottom: 50px;
 }
 
 .navabar-item-custom, .navabar-item-custom  a {
@@ -8,7 +9,7 @@ body{
 
 .footer-custom{
     text-align: center;
-    position: absolute;
+    position: fixed;
     bottom: 0%;
     width: 100%;
     background-color: #dfeaff;

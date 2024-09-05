@@ -5,13 +5,13 @@
 {% block content %}
     <div class="row">
         <div class="col-md-4">
-            <img src="/uploads/images/{{ product.illustration }}" alt="{{ product.name }}">
+            <img src="/uploads/images/{{ product.illustration }}" alt="{{ product.name }}"  height='380px'>
         </div>
             
         <div class="col-md-7 my-auto">
             <h3>{{ product.name }}</h3>
             <p>{{ product.subtitle }}</p>
-            <span class="product-page-price">{{ (product.price / 100)|number_format(2, ',','.') }} €
+            <span class="product-page-price">{{ (product.price / 100)|number_format(2, ',','.') }} € </span>
             <hr>
             <p>{{ product.description }}</p>
             <hr>
