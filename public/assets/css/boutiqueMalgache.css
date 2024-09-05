@@ -22,7 +22,7 @@ body{
 }
 
 .product-item{
-    margin-top: 15px;
+    margin-top: 50px;
 }
 
 .product-item .product-subtitle{
@@ -37,9 +37,9 @@ body{
 }
 
 .product-container {
-    margin-bottom: 155px;
+    margin-bottom: 150px;
 }
 
 .product-page-price{
-    font-size: 15px;
+    font-size: 19px;
 }
