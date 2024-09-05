@@ -14,6 +14,7 @@ body{
     width: 100%;
     background-color: #dfeaff;
     padding-top: 25px;
+    margin-top: 50px;
 }
 
 .product-item h5{
@@ -43,4 +44,10 @@ body{
 
 .product-page-price{
     font-size: 19px;
+}
+
+.cart-icon{
+    height: 19px;
+    padding-left: 19px;
+    filter: brightness(0) invert(1);
 }
