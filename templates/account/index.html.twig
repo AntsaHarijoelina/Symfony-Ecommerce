@@ -5,9 +5,9 @@
 {% block content %}
 <h1>Mon compte</h1>
 Bienvenu {{ app.user.firstname }}.<br/> 
-C'est dans cette espace que vous allez gerer toutes vos informations personnelles
-<a href = "{{ path('app_account_password') }}">Modifier mon mot de passe</a><br/> 
-- Ajouter mes adresses <br/> 
+C'est dans cette espace que vous allez gerer toutes vos informations personnelles <br/>
+- <a href = "{{ path('app_account_password') }}">Modifier mon mot de passe</a><br/> 
+- <a href = "{{ path('app_account_address') }}">Gerer mes adresses</a><br/> 
 - Mes commandes
 
 {% endblock %}
