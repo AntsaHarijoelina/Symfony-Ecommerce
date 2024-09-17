@@ -20,6 +20,7 @@ Retrouver l'ensemble de nos produits que vous avez ajouter a votre panier
     <tbody>
 
     {% set total= null %}
+    
     {% for product in cart %}
         <tr>
         <th>
@@ -41,7 +42,7 @@ Retrouver l'ensemble de nos produits que vous avez ajouter a votre panier
             
         </td>
         <td>{{ (product.product.price / 100)|number_format(2, ',','.') }} €</td>
-        <td>{{ ((product.product.price)*product.quantity / 100)|number_format(2, ',','.') }} €</td>
+        <td>{{ ((product.product.price )*product.quantity / 100)|number_format(2, ',','.') }} €</td>
         <td>
             <a href="{{ path('delete_to_cart', {'id':product.product.id}) }}">
                 <img src="{{ asset('assets/img/delete.png') }}" alt="supprimer mon produit" height="20px">
